@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ThesesController!{% endblock %}
+
+{% block body %}
+{% for Theses in theses %}
+    <h2>titre:{{Theses.titre|capitalize}}</h2>
+    <h3>phrase d'accroche:{{Theses.phrasedaccroche|capitalize}}</h3>
+    <h4>description: {{Theses.description|capitalize}}</h4>
+    <p>e-mail:{{Theses.email|capitalize}}</p>
+    
+    {% endfor %}
+{% endblock %}
+
+
+

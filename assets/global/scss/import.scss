@@ -1,0 +1,15 @@
+// Fichier définissant les règles css des couleurs du site
+@import 'color';
+
+// Par défaut, on charge le style globale en tablette
+@import 'tablet/global';
+
+// '@media (min-width: 992px)' est une media query écrite en SCSS
+// SI la taille de l'écran dépasse les 992px ALORS les règles inscrites
+// dans le fichier desktop/global.scss sont utilisées
+@media (min-width: 920px) {
+    // le langague SCSS importe automatiquement 'desktop/global' MAIS :
+    // va automatiquement ajouter la règle de la media query devant les
+    // règles définis dans 'desktop/global'
+  @import 'desktop/global';
+};

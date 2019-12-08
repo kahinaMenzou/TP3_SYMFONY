@@ -1,0 +1,11 @@
+// contient le style a afficher pour le format tablet et desktop
+
+body{
+  // affiche le bandeau du profiler de symfony en bleu sombre
+  .sf-toolbarreset{
+    background-color: #244657;
+  }
+  div{
+    background-color: #128ecc;
+  }
+}
